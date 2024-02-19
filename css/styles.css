@@ -54,6 +54,7 @@ a {
 .global-header .main-nav a,
 .global-header .main-nav a:visited {
   color: rgba(46, 47, 66, 1);
+  font-weight: 500;
 }
 
 .global-header a,
