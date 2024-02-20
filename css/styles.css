@@ -27,16 +27,29 @@
 .raleway-uniquifier {
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: 800;
   font-style: normal;
 }
 
 :root {
-  --text-font-family: "roboto-regular", sans-serif;
+  --text-font: "roboto-regular", sans-serif;
+  --iris: rgba(77, 90, 229, 1);
+  --ocean: rgba(64, 75, 191, 1);
+  --navy-blue: rgba(46, 47, 66, 1);
+  --green: rgba(49, 208, 170, 1);
+  --slate: rgba(67, 68, 85, 1);
+  --light-slate: rgba(142, 143, 153, 1);
+  --corn-flower: rgba(231, 233, 252, 1);
+  --cloud: rgba(244, 244, 253, 1);
+  --navy-blue-modal: rgba(46, 47, 66, 0.4);
+  --grey: rgba(46, 47, 66, 0.7);
+  --white: rgba(255, 255, 255, 1);
+  --dairy: rgba(252, 252, 252, 1);
 }
 
-* {
-  font-family: var(--text-font-family);
+body {
+  font-family: var(--text-font);
+  color: var(--navy-blue);
 }
 
 ul {
@@ -51,13 +64,14 @@ a {
   background-color: rgba(231, 233, 252, 1);
 }
 
-.global-header .main-nav a,
-.global-header .main-nav a:visited {
-  color: rgba(46, 47, 66, 1);
-  font-weight: 500;
+.global-header .logo {
+  font-family: "Raleway";
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--iris);
 }
 
-.global-header a,
-.global-header a:visited {
-  color: rgba(67, 68, 85, 1);
+.global-header .logo::after {
+  content: "STUDIO";
+  color: var(--navy-blue);
 }
