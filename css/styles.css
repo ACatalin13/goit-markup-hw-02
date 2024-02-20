@@ -22,17 +22,16 @@
   font-weight: 900;
   font-style: normal;
 }
-/*  <uniquifier>: Use a uniquifier for the class name / <weight>: Use a value from 100 to 900 */
 
-.raleway-uniquifier {
+.raleway-font {
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 800;
+  font-weight: 700;
   font-style: normal;
 }
 
 :root {
-  --text-font: "roboto-regular", sans-serif;
+  --text-font: "Roboto", sans-serif;
   --iris: rgba(77, 90, 229, 1);
   --ocean: rgba(64, 75, 191, 1);
   --navy-blue: rgba(46, 47, 66, 1);
@@ -61,7 +60,7 @@ a {
 }
 
 .global-header {
-  background-color: rgba(231, 233, 252, 1);
+  background-color: var(--corn-flower);
 }
 
 .global-header .logo {
@@ -73,5 +72,10 @@ a {
 
 .global-header .logo::after {
   content: "STUDIO";
+  color: var(--navy-blue);
+}
+
+.global-header .nav-row a,
+.global-header .nav-row a:hover {
   color: var(--navy-blue);
 }
