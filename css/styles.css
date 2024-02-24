@@ -60,7 +60,10 @@ a {
 }
 
 .global-header {
-  background-color: var(--corn-flower);
+  background-color: var(--white);
+  display: flex;
+  width: 1440px;
+  height: 72px;
 }
 
 .global-header .logo {
@@ -68,6 +71,8 @@ a {
   font-size: 18px;
   font-weight: 800;
   color: var(--iris);
+  width: 115px;
+  height: 24px;
 }
 
 .global-header .logo::after {
@@ -75,7 +80,16 @@ a {
   color: var(--navy-blue);
 }
 
-.global-header .nav-row a,
-.global-header .nav-row a:hover {
-  color: var(--navy-blue);
+.global-header .nav-menu {
+  width: 261px;
+  height: 24px;
+}
+.nav-menu-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.global-header .contact-info {
+  display: flex;
+  justify-content: flex-end;
 }
