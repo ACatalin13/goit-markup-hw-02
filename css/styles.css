@@ -31,7 +31,8 @@
 }
 
 :root {
-  --text-font: "Roboto", sans-serif;
+  --font-family: "Roboto", sans-serif;
+  --second-family: "Raleway", sans-serif;
   --iris: rgba(77, 90, 229, 1);
   --ocean: rgba(64, 75, 191, 1);
   --navy-blue: rgba(46, 47, 66, 1);
@@ -47,7 +48,7 @@
 }
 
 body {
-  font-family: var(--text-font);
+  font-family: var(--font-family);
   color: var(--navy-blue);
 }
 
@@ -92,4 +93,69 @@ a {
 .global-header .contact-info {
   display: flex;
   justify-content: flex-end;
+}
+
+.hero-container {
+  width: 1440px;
+  height: 600px;
+}
+.hero-container .hero-section {
+  display: flex;
+  background-color: var(--navy-blue);
+  flex-direction: column;
+  align-items: center;
+  padding: 188px 472px;
+  gap: 48px;
+}
+.hero-container .hero-section h1 {
+  color: var(--white);
+  width: 496px;
+  height: 120px;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 60px;
+}
+
+.hero-container .hero-section button {
+  width: 169px;
+  height: 56px;
+  background-color: var(--iris);
+  border-radius: 4px;
+  padding: 16px 32px;
+  gap: 10px;
+  font-weight: 500px;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.hero-container .hero-section button:hover {
+  background-color: var(--slate);
+  color: var(--green);
+}
+
+.features-container {
+  width: 1128px;
+  height: 104px;
+  margin: 120px 156px;
+}
+
+.features-container .features-list {
+  display: flex;
+}
+.features-container .features-list h3 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.features-container .features-list li {
+  color: var(--slate);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
