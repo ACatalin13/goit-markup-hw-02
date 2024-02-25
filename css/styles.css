@@ -159,3 +159,61 @@ a {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+
+.section-two-container {
+  width: 1128px;
+  height: 412px;
+  margin: 120px 156px;
+}
+
+.section-two-container .what-are-we-doing-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-two-container h2 {
+  width: 323px;
+  height: 40px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11111;
+}
+
+.section-two-container .what-are-we-doing-section .section-two-list {
+  display: flex;
+  gap: 24px;
+}
+
+.section-two-container .what-are-we-doing-section .section-two-list li {
+  width: 360px;
+  height: 300px;
+  border: 1px;
+  border-style: solid;
+  border-color: var(--corn-flower);
+}
+
+.our-team-container {
+  width: 1440px;
+  height: 732px;
+  background-color: var(--cloud);
+  margin-top: 120px;
+}
+
+.our-team-container .our-team-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.our-team-container .our-team-section h2 {
+  width: 162px;
+  height: 40px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.our-team-container .our-team-section .cards-list {
+  display: flex;
+  gap: 24px;
+}
