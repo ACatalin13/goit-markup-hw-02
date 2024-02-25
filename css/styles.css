@@ -211,9 +211,24 @@ a {
   font-size: 36px;
   font-weight: 700;
   line-height: 40px;
+  padding-top: 120px;
 }
 
 .our-team-container .our-team-section .cards-list {
   display: flex;
   gap: 24px;
+}
+.our-team-container .our-team-section .cards-list li {
+  width: 264px;
+  height: 380px;
+  padding: 0px, 0px, 32px, 0px;
+  border-radius: 0px, 0px, 4px, 4px;
+}
+
+.cards-list div {
+  width: 232px;
+  height: 56px;
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
 }
