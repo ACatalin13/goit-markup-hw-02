@@ -62,18 +62,25 @@ a {
 
 .global-header {
   background-color: var(--white);
-  display: flex;
   width: 1440px;
   height: 72px;
+  border-bottom: 1px solid var(--cornflower);
+  display: flex;
 }
 
-.global-header .logo {
-  font-family: "Raleway";
+.global-header .logo-wrapper {
+  width: 115px;
+  height: 24px;
+  padding: 24px 0px 24px 156px;
+}
+
+.logo {
+  font-family: var(--second-family);
   font-size: 18px;
   font-weight: 800;
   color: var(--iris);
-  width: 115px;
-  height: 24px;
+  line-height: 1.3125;
+  letter-spacing: 0.03em;
 }
 
 .global-header .logo::after {
@@ -87,23 +94,70 @@ a {
 }
 .nav-menu-items {
   display: flex;
-  justify-content: space-between;
+  gap: 40px;
+  width: 261px;
+  height: 24px;
 }
 
+.nav-menu-items li {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue);
+}
+
+.nav-menu-items li:hover {
+  color: var(--green);
+}
 .global-header .contact-info {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  padding: 0px 0px 24px 212px;
   display: flex;
-  justify-content: flex-end;
+  gap: 40px;
+}
+
+.contact-info {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  gap: 40px;
+}
+
+.contact-info a {
+  color: var(--slate);
+}
+
+.contact-info a:hover {
+  color: var(--green);
+}
+
+.contact-info .email {
+  width: 153px;
+  height: 24px;
+}
+
+.contact-info .telephone {
+  width: 151px;
+  height: 24px;
 }
 
 .hero-container {
   width: 1440px;
   height: 600px;
-}
-.hero-container .hero-section {
-  display: flex;
   background-color: var(--navy-blue);
+  display: flex;
   flex-direction: column;
   align-items: center;
+}
+.hero-container .hero-section {
   padding: 188px 472px;
   gap: 48px;
 }
@@ -231,4 +285,29 @@ a {
   gap: 8px;
   display: flex;
   flex-direction: column;
+}
+
+.global-footer {
+  width: 1440px;
+  height: 312px;
+  background-color: var(--navy-blue);
+}
+
+.global-footer .footer-text {
+  width: 264px;
+  height: 112px;
+  padding: 100px 1020px 100px 156px;
+}
+
+.global-footer .footer-text .logo::after {
+  content: "STUDIO";
+  color: var(--cloud);
+}
+
+.global-footer .footer-text p {
+  color: var(--cloud);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
