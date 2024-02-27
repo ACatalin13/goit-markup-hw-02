@@ -62,6 +62,7 @@ a {
 
 .container {
   width: 1200px;
+  margin: 0 auto;
 }
 
 .section {
@@ -70,21 +71,27 @@ a {
 
 .top-line {
   background-color: var(--white);
+  display: flex;
+  padding: 1.5em 0;
   border-bottom: 1px solid var(--corn-flower);
-  padding: 24px 0;
 }
+
 .top-line-style {
   display: flex;
+  width: 90em;
+  height: 4.5em;
   justify-content: space-between;
 }
 
 .logo {
-  font-family: var(--second-family);
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.16667;
-  letter-spacing: 0.03em;
   color: var(--iris);
+  font-family: var(--second-family);
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.3125;
+  letter-spacing: 0.03em;
+  padding-top: 1.5em;
+  padding-left: 9.75em;
 }
 
 .logo::after {
@@ -93,32 +100,34 @@ a {
 }
 
 .navbar-list {
+  width: 16.3125em;
+  height: 1.5em;
   display: flex;
-  gap: 40px;
-  margin-right: 100px;
+  gap: 1.5em;
+  margin-right: 6.25em;
 }
 
 .navbar-list-item {
-  font-family: var(--font-family);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   color: var(--navy-blue);
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5em;
+  letter-spacing: 0.02em;
 }
 
 .navbar-list-item:hover {
   color: var(--green);
 }
 
-.contact {
+.contact-info {
+  display: flex;
   font-family: var(--font-family);
+  gap: 2.5em;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.5em;
   letter-spacing: 0.02em;
-  display: flex;
-  gap: 40px;
   margin-left: 100px;
 }
 
@@ -129,42 +138,6 @@ a {
 .contact-info a:hover {
   color: var(--green);
 }
-
-.footer-section {
-  background: var(--navy-blue);
-  padding: 100px 0;
-}
-
-.footer-section-style {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  width: 264px;
-}
-
-.footer-logo {
-  font-family: var(--second-family);
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.16667;
-  letter-spacing: 0.03em;
-  color: var(--iris);
-}
-
-.footer-logo::after {
-  content: "STUDIO";
-  color: var(--cloud);
-}
-
-.footer-section-style p {
-  font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--cloud);
-}
-/* celelalte stilizari css */
 
 .section-one {
   background: var(--navy-blue);
@@ -220,7 +193,7 @@ a {
   justify-content: space-between;
 }
 
-.section-one-list-item h2 {
+.section-one-list-item h3 {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -261,7 +234,7 @@ a {
   justify-content: space-between;
 }
 
-.section-tree {
+.section-three {
   background: var(--cloud);
 }
 
@@ -275,12 +248,11 @@ a {
   font-size: 36px;
   line-height: 1.11111;
   letter-spacing: 0.02em;
-  text-transform: capitalize;
   margin-bottom: 72px;
   text-align: center;
 }
 
-.card-list {
+.cards-list {
   display: flex;
   justify-content: space-between;
 }
@@ -302,4 +274,40 @@ a {
   justify-content: center;
   gap: 8px;
   margin-bottom: 32px;
+}
+
+/* footer css */
+.footer-section {
+  background: var(--navy-blue);
+  padding: 100px 0;
+}
+
+.footer-section-style {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 264px;
+}
+
+.footer-logo {
+  font-family: var(--second-family);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.16667em;
+  letter-spacing: 0.03em;
+  color: var(--iris);
+}
+
+.footer-logo::after {
+  content: "STUDIO";
+  color: var(--cloud);
+}
+
+.footer-section-style p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5em;
+  letter-spacing: 0.02em;
+  color: var(--cloud);
 }
